@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wQ-BS-t3L">
+                                <rect key="frame" x="218" y="285" width="165" height="30"/>
+                                <state key="normal" title="Show Alert View"/>
+                                <connections>
+                                    <action selector="showAlertView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HG5-S1-ocN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqO-W7-hRL">
+                                <rect key="frame" x="218" y="325" width="165" height="30"/>
+                                <state key="normal" title="Show Alert View Double"/>
+                                <connections>
+                                    <action selector="showAlertViewDouble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5dl-pa-58e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="1wQ-BS-t3L" secondAttribute="centerX" id="DLl-pz-Uz3"/>
+                            <constraint firstItem="jqO-W7-hRL" firstAttribute="top" secondItem="1wQ-BS-t3L" secondAttribute="bottom" constant="10" id="aMF-cS-d8i"/>
+                            <constraint firstItem="jqO-W7-hRL" firstAttribute="width" secondItem="1wQ-BS-t3L" secondAttribute="width" id="ca8-Hm-L13"/>
+                            <constraint firstItem="jqO-W7-hRL" firstAttribute="height" secondItem="1wQ-BS-t3L" secondAttribute="height" id="h2y-zx-2a1"/>
+                            <constraint firstAttribute="centerY" secondItem="1wQ-BS-t3L" secondAttribute="centerY" id="hop-vk-fNX"/>
+                            <constraint firstItem="jqO-W7-hRL" firstAttribute="trailing" secondItem="1wQ-BS-t3L" secondAttribute="trailing" id="t0D-5h-VQW"/>
+                            <constraint firstItem="jqO-W7-hRL" firstAttribute="leading" secondItem="1wQ-BS-t3L" secondAttribute="leading" id="zbf-aQ-7tq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
